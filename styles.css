@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.header {
+  flex: 1;
+}
+.navigation {
+  flex: 0.5;
+  margin: 0.5em;
+}
+.middle-section {
+  display: flex;
+  flex: 7.5;
+  flex-direction: row;
+}
+.content {
+  flex: 7;
+  margin: 0.5em;
+} 
+.sidebar {
+  flex: 3;
+  border: 2px solid #000000;
+  margin: 0.5em;
+}
+.footer {
+  flex: 1;
+}
+.header, .footer {
+  border: 2px solid #000000;
+  margin: 0.5em;
+}
+.header, .navigation, .footer, .content, .sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 2px solid #000000;
+}
